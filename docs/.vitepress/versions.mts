@@ -7,9 +7,13 @@ export const sidebars: SidebarType = {
   root: [
     {
       items: [
-        { text: "Introduction", link: "/introduction" },
+        { text: "About", link: "/about" },
         { text: "Current Features", link: "/mod-features" },
       ],
+    },
+    {
+      text: "Resourcepack Docs",
+      items: [{ text: "Introduction", link: "rp/introduction" }],
     },
   ],
 };
