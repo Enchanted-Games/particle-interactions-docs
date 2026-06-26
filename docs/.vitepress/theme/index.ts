@@ -3,6 +3,7 @@ import { h } from "vue";
 import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import VersionSwitcher from "@viteplus/versions/components/version-switcher.component.vue";
+import Preview from "../components/Preview.vue";
 import "./style.css";
 
 export default {
@@ -14,5 +15,6 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     app.component("VersionSwitcher", VersionSwitcher);
+    app.component("Preview", Preview);
   },
 } satisfies Theme;
