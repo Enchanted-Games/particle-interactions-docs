@@ -59,5 +59,4 @@ export default defineVersionedConfig({
   },
 
   ignoreDeadLinks: true,
-  lastUpdated: true,
 });
