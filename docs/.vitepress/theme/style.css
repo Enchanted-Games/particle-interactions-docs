@@ -162,3 +162,12 @@
   --docsearch-search-button-background: var(--vp-c-bg-alt) !important;
   --docsearch-search-button-text-color: var(--vp-c-text-2) !important;
 }
+
+/* images */
+.full-width-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  image-rendering: pixelated;
+  max-width: 700px;
+}

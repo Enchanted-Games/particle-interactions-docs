@@ -6,7 +6,10 @@ export const sidebars: SidebarType = {
   // root used for latest version and default for versions without a custom navbar
   root: [
     {
-      items: [{ text: "Markdown examples", link: "/markdown-examples" }],
+      items: [
+        { text: "Introduction", link: "/introduction" },
+        { text: "Current Features", link: "/mod-features" },
+      ],
     },
   ],
 };

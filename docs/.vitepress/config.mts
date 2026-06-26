@@ -23,7 +23,7 @@ export default defineVersionedConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: {
-      root: [{ text: "Home", link: "/" }, { text: "Contribute", link: githubPage }, { component: "VersionSwitcher" }],
+      root: [{ text: "Home", link: "/" }, { text: "Introduction", link: "/introduction" }, { text: "Resourcepack docs", link: "/resourcepack-introduction" }, { component: "VersionSwitcher" }],
     },
 
     search: {
