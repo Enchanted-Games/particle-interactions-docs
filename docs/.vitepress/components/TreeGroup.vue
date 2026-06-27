@@ -20,6 +20,15 @@ const props = defineProps({
 </template>
 
 <style scoped>
+ul:not(ul > ul) {
+  /* first group */
+  border-radius: 6px;
+  background-color: var(--vp-c-bg-alt);
+  padding: 0.3em 0.6em;
+
+  box-shadow: var(--vp-shadow-2);
+}
+
 ul {
   list-style: none;
   margin: 0;
