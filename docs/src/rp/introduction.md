@@ -42,6 +42,10 @@ A place where a particle is being spawned from, for example `block/broken` if th
 
 A file located at `assets/<namespace>/eg_particle_interactions/lists/<object_type>/<path>.json` in a resourcepack which contain a list of blocks, fluids, biomes, or entity types. These can be referenced within other files and function in a similar way to tags in vanilla datapacks; that being that the contents are combined from multiple resourcepacks if both of them add entries to the same list.
 
+### Object predicates
+
+An object that defines tests against certain objects, such as blocks, fluids, biomes, or entity types.
+
 ### Particle definition
 
 A file located at `assets/<namespace>/eg_particle_interactions/particles/<path>.json` in a resourcepack which contains a set of components to control the behaviour of a particle.
@@ -55,3 +59,13 @@ A file located at `assets/<namespace>/eg_particle_interactions/appearances/<path
 A version of vanilla Minecraft [Identifiers](https://minecraft.wiki/w/Identifier), however if no namespace is specified it will default to `eg_particle_interactions` instead of `minecraft`.
 
 For example, `some_id` will resolve to `eg_particle_interactions:some_id` instead of `minecraft:some_id` like it would for a normal identifier. You can of course still specify the namespace manually like a normal identifier, `my_namespace:some_id` resolves to `my_namespace:some_id` as usual.
+
+### Particle context
+
+You don't interact with particle contexts directly, however you can perform checks against them using, for example, [object predicates](#object-predicates). [Particle appearances](#particle-appearance) can also base colours and textures on this depending on what the context is.
+
+A particle context can be one of the following:
+- 'Plain': contains no object
+- 'Block': contains a blockstate and block position
+- 'Fluid': contains a fluidstate and block position
+- 'Entity': contains an entity type id

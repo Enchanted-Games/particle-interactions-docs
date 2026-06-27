@@ -17,6 +17,7 @@ export const sidebars: SidebarType = {
       items: [
         { text: "Introduction", link: "introduction" },
         { text: "Particle overrides", link: "particle-overrides" },
+        { text: "Particle origins", link: "particle-origins" },
         { text: "Particle emitter rules", link: "particle-emitters" },
       ],
     },
