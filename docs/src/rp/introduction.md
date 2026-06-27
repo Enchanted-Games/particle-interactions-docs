@@ -5,8 +5,9 @@ This section of the documentation covers how the mod can be customised with reso
 ## Prerequisites
 
 <TreeGroup icon="string" name="root">
-    <TreeField icon="string" name="sub-field"></TreeField>
-    <TreeField icon="string" name="sub-field-2"></TreeField>
+    <TreeField icon="string" name="sub-field" desc="Something cool about this field"></TreeField>
+    <TreeField icon="string" name="sub-field-2" desc="This section of the documentation covers how the mod can be customised with resourcepacks and how you can add your own particles for blocks and fluids.
+"></TreeField>
     <TreeGroup icon="string" name="sub-group">
         <TreeField icon="string" name="sub-group-field"></TreeField>
     </TreeGroup>

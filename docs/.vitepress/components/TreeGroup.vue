@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import TreeFieldText from "./TreeFieldText.vue";
+
 const props = defineProps({
   icon: {
     type: String,
@@ -8,13 +10,16 @@ const props = defineProps({
     type: String,
     required: false,
   },
+  desc: {
+    type: String,
+    required: false,
+  },
 });
 </script>
 
 <template>
   <ul>
-    <img :src="'/images/icons/json/' + props.icon + '.png'" :alt="props.icon" />
-    <span>: {{ props.name }}</span>
+    <TreeFieldText :icon="props.icon" :name="props.name" :desc="props.desc"></TreeFieldText>
     <slot></slot>
   </ul>
 </template>
@@ -70,13 +75,5 @@ ul > ul::after {
 
 ul > ul:last-child:after {
   border-left: none;
-}
-
-img {
-  display: inline-block;
-  margin: 0;
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
 }
 </style>
