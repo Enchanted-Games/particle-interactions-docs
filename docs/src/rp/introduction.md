@@ -28,11 +28,11 @@ A file located at `assets/<namespace>/eg_particle_interactions/override_rules/<o
 
 ### Particle emitter rule
 
-A file located at `assets/<namespace>/eg_particle_interactions/emitter_rules/<path>.json` in a resourcepack which contains rules about which [particle emitter](#particle-emitter) to use in a given context, as well as a fallback particle emitter which is used when no rules pass. These can often be inlined directly in files or be referenced by id in other files.
+A file located at `assets/<namespace>/eg_particle_interactions/emitter_rules/<path>.json` in a resourcepack which contains rules about which [particle emitter type](#particle-emitter-type) to use in a given context, as well as a fallback particle emitter which is used when no rules pass. These can often be inlined directly in files or be referenced by id in other files.
 
-### Particle emitter
+### Particle emitter type
 
-An object that defines a particle to emit with an optional velocity multiplier and position offset. Particle emitters can emit a resourcepack-driven particle from any resourcepack or a particle from the vanilla particle_types registry.
+An object that defines a particle to emit with an optional velocity multiplier and position offset. Particle emitter types can emit a resourcepack-driven particle from any resourcepack or a particle from the vanilla particle_types registry.
 
 ### Particle origin
 

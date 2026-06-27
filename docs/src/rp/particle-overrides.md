@@ -41,7 +41,7 @@ Particle overrides are loaded from the `assets/<namespace>/eg_particle_interacti
 | `fluid/water/entity_entered` | An entity has entered water (replaced the vanilla `splash` particles) |
 | `fluid/water/entity_entered_bubbles` | An entity has entered water (replaced the vanilla `bubble` particles) |
 
-### Example
+### Examples
 
 This override will use the `my_cool_pack:sparkles-emitter` emitter rule for all particle origins, and will emit the vanilla `splash` particle for the `block/broken` origin.
 
@@ -153,7 +153,7 @@ This override rule will apply the `my_cool_pack:sparkles_override` override to g
 }
 ```
 
-This override rule will exclude the `my_cool_pack:sparkles_override` override from applying to amy fluid in the `#water` tag
+This override rule will exclude the `my_cool_pack:sparkles_override` override from applying to any fluid in the `#water` tag
 
 ```json
 // assets/my_cool_pack/eg_particle_interactions/override_rules/fluids/sparkles_override.json
