@@ -64,7 +64,7 @@ for (let i = 0; i < icons.length; i++) {
 
   background-color: var(--vp-c-bg-elv);
   padding: var(--_padding-block) var(--_padding-inline);
-  border-radius: 3px;
+  border-radius: 6px;
 }
 
 .field-icons-wrapper:hover .field-icons-tooltip {

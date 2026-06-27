@@ -49,7 +49,7 @@ li::before {
 
 li:last-child::before {
   /* cut line in half if last child */
-  height: 51%;
+  height: 0.9em;
 }
 
 li::after {
