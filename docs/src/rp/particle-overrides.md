@@ -69,7 +69,7 @@ In practise, this means a pack below yours could define an exclusion for the sam
                 <TreeField
                     icon="block-predicate|list"
                     name="block_predicate"
-                    desc="A single block predicate or list of block predicates. If a list is defined here at least one predicates must pass to apply the override"
+                    desc="A single block predicate or list of block predicates. If a list is defined here at least one predicate must pass to apply the override"
                 />
             </TreeGroup>
         </TreeGroup>
@@ -84,11 +84,37 @@ In practise, this means a pack below yours could define an exclusion for the sam
     </TreeGroup>
 </TreeGroup>
 
-#### Examples
+### JSON format for `fluids` subfolder
+
+<TreeGroup name="root">
+    <TreeGroup name="weights" desc="A map of particle origin to fluid predicates and weights">
+        <TreeGroup icon="list" name="<particle origin>">
+            <TreeGroup icon="object" desc="weight and predicate">
+                <TreeField icon="int" name="weight" desc="(Optional, default 1)"></TreeField>
+                <TreeField
+                    icon="fluid-predicate|list"
+                    name="fluid_predicate"
+                    desc="A single fluid predicate or list of fluid predicates. If a list is defined here at least one predicate must pass to apply the override"
+                />
+            </TreeGroup>
+        </TreeGroup>
+    </TreeGroup>
+    <TreeGroup name="exclusions" desc="A map of particle origin to fluid predicate">
+        <TreeGroup icon="list" name="<particle origin>" desc="If any predicate passes the override is excluded applying to the matching fluids">
+            <TreeField
+                icon="fluid-predicate"
+                desc="A fluid predicate"
+            />
+        </TreeGroup>
+    </TreeGroup>
+</TreeGroup>
+
+### Examples
 
 This override rule will apply the `my_cool_pack:sparkles_override` override to glowstone and redstone blocks
 
 ```json
+// assets/my_cool_pack/eg_particle_interactions/override_rules/blocks/sparkles_override.json
 {
     "weights": {
         "default": [
@@ -104,19 +130,18 @@ This override rule will apply the `my_cool_pack:sparkles_override` override to g
 }
 ```
 
-This override rule will exclude the `my_cool_pack:sparkles_override` override from applying to redstone blocks
+This override rule will exclude the `my_cool_pack:sparkles_override` override from applying to amy fluid in the `#water` tag
 
 ```json
+// assets/my_cool_pack/eg_particle_interactions/override_rules/fluids/sparkles_override.json
 {
     "exclusions": {
         "default": [
             {
                 "type": "list",
-                "blocks": ["redstone_block"]
+                "fluids": ["#water"]
             }
         ]
     }
 }
 ```
-
-### JSON format for `fluids` subfolder
