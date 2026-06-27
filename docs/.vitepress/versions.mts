@@ -8,12 +8,16 @@ export const sidebars: SidebarType = {
     {
       items: [
         { text: "About", link: "/about" },
-        { text: "Current Features", link: "/mod-features" },
+        { text: "Current features", link: "/mod-features" },
       ],
     },
     {
       text: "Resourcepack Docs",
-      items: [{ text: "Introduction", link: "rp/introduction" }],
+      base: "/rp/",
+      items: [
+        { text: "Introduction", link: "introduction" },
+        { text: "Particle overrides", link: "particle-overrides" },
+      ],
     },
   ],
 };

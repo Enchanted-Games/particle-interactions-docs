@@ -47,6 +47,10 @@ export default defineVersionedConfig({
       },
     ],
 
+    outline: {
+      level: [2, 3],
+    },
+
     footer: {
       message: "Not an official Minecraft product. Not approved by, associated with, or endorsed by Mojang or Microsoft.",
     },

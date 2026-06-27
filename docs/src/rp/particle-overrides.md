@@ -1,0 +1,122 @@
+# Particle overrides
+
+Particle overrides define a set of [particle emitter rules](/rp/particle-emitters#emitter-rules) for [particle origins](#particle-origins). Currently, these are used to define custom particles for various block and fluid interactions, this may be expanded upon in the future.
+
+Particle overrides are loaded from the `assets/<namespace>/eg_particle_interactions/particle_overrides/<path>.json` directory of a resourcepack, the id is based on what the file is called and tha namespace it is placed in. For example `assets/my_cool_pack/eg_particle_interactions/particle_overrides/sparkles_override.json` will resolve to `my_cool_pack:sparkles_override`.
+
+## Particle override JSON format
+
+<TreeGroup name="root">
+    <TreeGroup name="emitters" desc="A map of particle origin to a particle emitter rule">
+        <TreeField 
+            icon="emitter-rule|particle-interactions-id"
+            name="<particle origin>"
+            desc="The particle emitter rule to use for this origin. Can be either a particle interactions identifier pointing to an emitter rule file, or an inline emitter rule"
+        />
+    </TreeGroup>
+</TreeGroup>
+
+### List of particle origins
+
+### Example
+
+This override will use the `my_cool_pack:sparkles-emitter` emitter rule for all particle origins, and will emit the vanilla `splash` particle for the `block/broken` origin.
+
+```json
+// assets/my_cool_pack/eg_particle_interactions/particle_overrides/sparkles-override.json
+{
+    "emitters": {
+        "default": "my_cool_pack:sparkles-emitter",
+        "block/broken": {
+            "type": "vanilla",
+            "particle": {
+                "type": "splash"
+            }
+        }
+    }
+}
+```
+
+## Override rules
+
+On its own, a particle override will not do anything. We need to tell it what objects to apply to with an override rule file.
+
+Override rules are loaded from the `assets/<namespace>/eg_particle_interactions/override_rules/<object_type>/<path>.json` directory of a resourcepack and should have the same namespace and path as the override you wish to target. For example, to target the `my_cool_pack:sparkles_override` from the above example, the override rule would go at `assets/my_cool_pack/eg_particle_interactions/override_rules/<object_type>/sparkles_override.json`
+
+As for the `<object_type>` subfolder, this can be either `blocks` or `fluids` to apply the particle override to a block or fluid respectively. 
+
+::: info
+Note: the same particle override can be applied to a fluid _and_ a block if you wish! Additionally multiple particle overrides can be applied to the same block or fluid, in this case a random override is chosen for each particle using a weighted random.
+:::
+
+### Multiple resourcepacks
+
+When multiple resourcepacks define an override rule for the same particle override, they stack. This happens in a specific order:
+
+1. All entries in `weights` are combined
+2. All entries in `exclusions` are combined
+3. Exclusions are calculated using the combined list
+
+In practise, this means a pack below yours could define an exclusion for the same particle override as you and it would still apply
+
+### JSON format for `blocks` subfolder
+
+<TreeGroup name="root">
+    <TreeGroup name="weights" desc="A map of particle origin to block predicates and weights">
+        <TreeGroup icon="list" name="<particle origin>">
+            <TreeGroup icon="object" desc="weight and predicate">
+                <TreeField icon="int" name="weight" desc="(Optional, default 1)"></TreeField>
+                <TreeField
+                    icon="block-predicate|list"
+                    name="block_predicate"
+                    desc="A single block predicate or list of block predicates. If a list is defined here at least one predicates must pass to apply the override"
+                />
+            </TreeGroup>
+        </TreeGroup>
+    </TreeGroup>
+    <TreeGroup name="exclusions" desc="A map of particle origin to block predicate">
+        <TreeGroup icon="list" name="<particle origin>" desc="If any predicate passes the override is excluded applying to the matching blocks">
+            <TreeField
+                icon="block-predicate"
+                desc="A block predicate"
+            />
+        </TreeGroup>
+    </TreeGroup>
+</TreeGroup>
+
+#### Examples
+
+This override rule will apply the `my_cool_pack:sparkles_override` override to glowstone and redstone blocks
+
+```json
+{
+    "weights": {
+        "default": [
+            {
+                "weight": 1,
+                "block_predicate": {
+                    "type": "list",
+                    "blocks": ["glowstone", "redstone_block"]
+                }
+            }
+        ]
+    }
+}
+```
+
+This override rule will exclude the `my_cool_pack:sparkles_override` override from applying to redstone blocks
+
+```json
+{
+    "exclusions": {
+        "default": [
+            {
+                "type": "list",
+                "blocks": ["redstone_block"]
+            }
+        ]
+    }
+}
+```
+
+### JSON format for `fluids` subfolder
