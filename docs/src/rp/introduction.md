@@ -4,7 +4,7 @@ This section of the documentation covers how the mod can be customised with reso
 
 ## Prerequisites
 
-Before starting it is expected that you have a basic understanding of JSON files and file management as you will be using these skills to make a resourcepack.
+Before starting it is expected that you have a basic understanding of JSON files and file management as you will be using these skills to make a resourcepack for the mod.
 
 ### Minecraft concepts
 
@@ -53,3 +53,5 @@ A file located at `assets/<namespace>/eg_particle_interactions/appearances/<path
 ### Particle Interactions identifier
 
 A version of vanilla Minecraft [Identifiers](https://minecraft.wiki/w/Identifier), however if no namespace is specified it will default to `eg_particle_interactions` instead of `minecraft`.
+
+For example, `some_id` will resolve to `eg_particle_interactions:some_id` instead of `minecraft:some_id` like it would for a normal identifier. You can of course still specify the namespace manually like a normal identifier, `my_namespace:some_id` resolves to `my_namespace:some_id` as usual.
