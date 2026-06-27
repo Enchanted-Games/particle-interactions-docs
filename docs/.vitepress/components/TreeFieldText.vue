@@ -17,11 +17,15 @@ const props = defineProps({
 
 const icons: String[] = props.icon.split("|");
 
-var formattedTypes: String = "Allowed " + (icons.length == 1 ? "type: " : "types: ");
+var formattedTypes: String = icons.length == 1 ? "Type: " : "Types: ";
 for (let i = 0; i < icons.length; i++) {
-  var isLast = i == icons.length - 1;
+  if (icons.length == 2) {
+    formattedTypes += icons[0] + " or " + icons[1];
+    break;
+  }
   formattedTypes += icons[i];
-  if (!isLast) formattedTypes += ", ";
+  if (i != icons.length - 1) formattedTypes += ", ";
+  if (i == icons.length - 2) formattedTypes += "or ";
 }
 </script>
 
