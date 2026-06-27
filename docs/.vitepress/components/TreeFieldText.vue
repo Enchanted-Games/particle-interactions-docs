@@ -13,10 +13,12 @@ const props = defineProps({
     required: false,
   },
 });
+
+const icons: String[] = props.icon.split("|");
 </script>
 
 <template>
-  <img :src="'/images/icons/json/' + props.icon + '.png'" :alt="props.icon" />
+  <img v-for="icon in icons" :src="'/images/icons/json/' + icon + '.png'" :alt="icon" />
   <span
     >: <span class="field-name">{{ props.name }}</span> {{ props.desc }}</span
   >
