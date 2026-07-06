@@ -6,6 +6,9 @@ import VersionSwitcher from "@viteplus/versions/components/version-switcher.comp
 import Preview from "../components/Preview.vue";
 import TreeGroup from "../components/TreeGroup.vue";
 import TreeField from "../components/TreeField.vue";
+import ParticleOverrideFormat from "../components/formats/ParticleOverrideFormat.vue";
+import ParticleEmitterFormat from "../components/formats/ParticleEmitterFormat.vue";
+import ParticleEmitterRuleFormat from "../components/formats/ParticleEmitterRuleFormat.vue";
 import "./style.css";
 
 export default {
@@ -20,5 +23,8 @@ export default {
     app.component("Preview", Preview);
     app.component("TreeGroup", TreeGroup);
     app.component("TreeField", TreeField);
+    app.component("ParticleOverrideFormat", ParticleOverrideFormat);
+    app.component("ParticleEmitterFormat", ParticleEmitterFormat);
+    app.component("ParticleEmitterRuleFormat", ParticleEmitterRuleFormat);
   },
 } satisfies Theme;
