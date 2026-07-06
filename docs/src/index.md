@@ -10,11 +10,11 @@ hero:
     alt: Particle Interactions Icon
   actions:
     - theme: brand
-      text: Introduction
-      link: /introduction
+      text: About
+      link: /about
     - theme: alt
       text: Resourcepack documentation
-      link: /resourcepack-introduction
+      link: /rp/introduction
     - theme: alt
       text: Get the mod
       link: https://modrinth.com/mod/particle-interactions
