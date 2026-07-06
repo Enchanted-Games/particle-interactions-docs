@@ -4,6 +4,16 @@ Object predicates define tests against certain objects, such as blocks, fluids, 
 
 ## Block predicates
 
+<BlockPredicateFormat></BlockPredicateFormat>
+
+### `list` type
+
+<BlockListPredicateFormat name="" desc="fields"></BlockListPredicateFormat>
+
+### `block_state` type
+
+<BlockStatePredicateFormat name="" desc="fields"></BlockStatePredicateFormat>
+
 ## Fluid predicates
 
 ## Biome predicates
