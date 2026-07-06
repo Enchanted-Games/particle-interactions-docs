@@ -9,6 +9,8 @@ import TreeField from "../components/TreeField.vue";
 import ParticleOverrideFormat from "../components/formats/ParticleOverrideFormat.vue";
 import ParticleEmitterFormat from "../components/formats/ParticleEmitterFormat.vue";
 import ParticleEmitterRuleFormat from "../components/formats/ParticleEmitterRuleFormat.vue";
+import BlockListFormat from "../components/formats/lists/BlockListFormat.vue";
+import BlockStatePredicateFormat from "../components/formats/predicates/block/BlockStatePredicateFormat.vue";
 import "./style.css";
 
 export default {
@@ -26,5 +28,7 @@ export default {
     app.component("ParticleOverrideFormat", ParticleOverrideFormat);
     app.component("ParticleEmitterFormat", ParticleEmitterFormat);
     app.component("ParticleEmitterRuleFormat", ParticleEmitterRuleFormat);
+    app.component("BlockListFormat", BlockListFormat);
+    app.component("BlockStatePredicateFormat", BlockStatePredicateFormat);
   },
 } satisfies Theme;

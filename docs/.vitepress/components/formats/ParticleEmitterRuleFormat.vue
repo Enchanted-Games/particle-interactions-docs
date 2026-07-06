@@ -1,19 +1,7 @@
 <script setup lang="ts">
-const props = defineProps({
-  name: {
-    type: String,
-    required: false,
-    default: "[html]<i>Particle Emitter Rule</i>",
-  },
-  desc: {
-    type: String,
-    required: false,
-  },
-  colour: {
-    type: String,
-    required: false,
-  },
-});
+import { commonProps } from "../../util/CommonFormatComponentProps.ts";
+
+const props = defineProps(commonProps("[html]<i>Particle Emitter Rule</i>"));
 </script>
 
 <template>

@@ -1,6 +1,6 @@
 # Object predicates
 
-An object that defines tests against certain objects, such as blocks, fluids, biomes, or entity types. These aren't stored in or loaded directly from a resourcepack, however they are used within various other files of the mod such as [particle emitter rules](/rp/particle-emitters#emitter-rules).
+Object predicates define tests against certain objects, such as blocks, fluids, biomes, or entity types. These aren't stored in or loaded directly from a resourcepack, however they are used within various other files of the mod such as [particle emitter rules](/rp/particle-emitters#emitter-rules).
 
 ## Block predicates
 

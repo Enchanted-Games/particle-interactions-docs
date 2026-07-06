@@ -19,6 +19,7 @@ export const sidebars: SidebarType = {
         { text: "Particle overrides", link: "particle-overrides" },
         { text: "Particle origins", link: "particle-origins" },
         { text: "Particle emitter rules", link: "particle-emitters" },
+        { text: "Object lists", link: "object-lists" },
         { text: "Object predicates", link: "object-predicates" },
       ],
     },
