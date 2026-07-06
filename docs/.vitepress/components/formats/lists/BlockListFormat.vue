@@ -11,9 +11,7 @@ const props = defineProps(commonProps("[html]<i>Block List</i>"));
       <TreeField icon="identifier" name="<tag id>" desc="[html]A block tag id, prefixed with a <code>#</code>. This field accepts ids that may not actually exist" />
     </TreeGroup>
     <TreeGroup icon="list" name="block_states" desc="Optional. List of block state predicates">
-      <TreeGroup icon="object" desc="<block state predicate>">
-        <BlockStatePredicateFormat></BlockStatePredicateFormat>
-      </TreeGroup>
+      <BlockStatePredicateFormat name="" desc="block state predicate"></BlockStatePredicateFormat>
     </TreeGroup>
     <TreeGroup
       icon="list"

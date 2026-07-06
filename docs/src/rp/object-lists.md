@@ -10,6 +10,10 @@ Loaded from the `assets/<namespace>/eg_particle_interactions/lists/blocks/<path>
 
 ## Fluid list
 
+Loaded from the `assets/<namespace>/eg_particle_interactions/lists/fluids/<path>.json` directory
+
+<FluidListFormat></FluidListFormat>
+
 ## Biome list
 
 ## Entity type list

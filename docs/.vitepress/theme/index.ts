@@ -10,7 +10,9 @@ import ParticleOverrideFormat from "../components/formats/ParticleOverrideFormat
 import ParticleEmitterFormat from "../components/formats/ParticleEmitterFormat.vue";
 import ParticleEmitterRuleFormat from "../components/formats/ParticleEmitterRuleFormat.vue";
 import BlockListFormat from "../components/formats/lists/BlockListFormat.vue";
+import FluidListFormat from "../components/formats/lists/FluidListFormat.vue";
 import BlockStatePredicateFormat from "../components/formats/predicates/block/BlockStatePredicateFormat.vue";
+import FluidStatePredicateFormat from "../components/formats/predicates/fluid/FluidStatePredicateFormat.vue";
 import "./style.css";
 
 export default {
@@ -29,6 +31,8 @@ export default {
     app.component("ParticleEmitterFormat", ParticleEmitterFormat);
     app.component("ParticleEmitterRuleFormat", ParticleEmitterRuleFormat);
     app.component("BlockListFormat", BlockListFormat);
+    app.component("FluidListFormat", FluidListFormat);
     app.component("BlockStatePredicateFormat", BlockStatePredicateFormat);
+    app.component("FluidStatePredicateFormat", FluidStatePredicateFormat);
   },
 } satisfies Theme;
