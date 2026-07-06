@@ -14,11 +14,15 @@ const props = defineProps({
     type: String,
     required: false,
   },
+  colour: {
+    type: String,
+    required: false,
+  },
 });
 </script>
 
 <template>
-  <ul>
+  <ul :style="props.colour != null ? 'background-color: ' + props.colour + ' !important' : ''">
     <TreeFieldText :icon="props.icon" :name="props.name" :desc="props.desc"></TreeFieldText>
     <slot></slot>
   </ul>
@@ -28,8 +32,8 @@ const props = defineProps({
 ul:not(ul > ul) {
   /* first group */
   border-radius: 6px;
-  background-color: var(--vp-c-bg-alt);
   padding: 0.3em 0.6em;
+  background-color: var(--vp-c-bg-alt);
 
   box-shadow: var(--vp-shadow-2);
 }

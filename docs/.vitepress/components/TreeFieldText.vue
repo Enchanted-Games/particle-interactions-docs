@@ -8,12 +8,17 @@ const props = defineProps({
   name: {
     type: String,
     required: false,
+    default: "",
   },
   desc: {
     type: String,
     required: false,
+    default: "",
   },
 });
+
+const htmlMarker = "[html]";
+const htmlMarkerIndex = htmlMarker.length;
 
 const icons: String[] = props.icon.split("|");
 
@@ -27,6 +32,9 @@ for (let i = 0; i < icons.length; i++) {
   if (i != icons.length - 1) formattedTypes += ", ";
   if (i == icons.length - 2) formattedTypes += "or ";
 }
+
+const rawHtmlName = props.name.startsWith(htmlMarker);
+const rawHtmlDesc = props.desc.startsWith(htmlMarker);
 </script>
 
 <template>
@@ -37,8 +45,9 @@ for (let i = 0; i < icons.length; i++) {
     <img draggable="false" v-for="icon in icons" :src="'/images/icons/json/' + icon + '.png'" :alt="icon" />
   </span>
   <span
-    >: <span class="field-name">{{ props.name }}</span> {{ props.desc }}</span
-  >
+    >: <span class="field-name" v-if="rawHtmlName" v-html="props.name.substr(htmlMarkerIndex)"></span><span class="field-name" v-else>{{ props.name }}</span> <span v-if="rawHtmlDesc" v-html="props.desc.substr(htmlMarkerIndex)"></span
+    ><span v-else>{{ props.desc }}</span>
+  </span>
 </template>
 
 <style scoped>

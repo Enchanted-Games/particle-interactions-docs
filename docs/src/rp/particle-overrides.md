@@ -6,15 +6,7 @@ Particle overrides are loaded from the `assets/<namespace>/eg_particle_interacti
 
 ## Particle override JSON format
 
-<TreeGroup name="root">
-    <TreeGroup name="emitters" desc="A map of particle origin to a particle emitter rule">
-        <TreeField 
-            icon="emitter-rule|particle-interactions-id"
-            name="<particle origin>"
-            desc="The particle emitter rule to use for this origin. Can be either a particle interactions identifier pointing to an emitter rule file, or an inline emitter rule"
-        />
-    </TreeGroup>
-</TreeGroup>
+<ParticleOverrideFormat></ParticleOverrideFormat>
 
 ### Examples
 
