@@ -44,7 +44,7 @@ const rawHtmlDesc = props.desc.startsWith(htmlMarker);
     </span>
     <img draggable="false" v-for="icon in icons" :src="'/images/icons/json/' + icon + '.png'" :alt="icon" />
   </span>
-  <span
+  <span class="text-wrapper"
     >: <span class="field-name" v-if="rawHtmlName" v-html="props.name.substr(htmlMarkerIndex)"></span><span class="field-name" v-else>{{ props.name }}</span> <span v-if="rawHtmlDesc" v-html="props.desc.substr(htmlMarkerIndex)"></span
     ><span v-else>{{ props.desc }}</span>
   </span>

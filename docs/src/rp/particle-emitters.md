@@ -6,8 +6,16 @@ Particle emitter rules are loaded from the `assets/<namespace>/eg_particle_inter
 
 ## JSON format
 
-<TreeGroup name="root">
+<ParticleEmitterRuleFormat />
 
-</TreeGroup>
+## Condition types
+
+::: info
+List of condition types soon
+:::
 
 ## Emitter types
+
+::: info
+List of emitter types soon
+:::
