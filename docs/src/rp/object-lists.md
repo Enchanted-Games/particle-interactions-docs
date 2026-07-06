@@ -6,14 +6,16 @@ Object lists are loaded from the `assets/<namespace>/eg_particle_interactions/li
 
 Loaded from the `assets/<namespace>/eg_particle_interactions/lists/blocks/<path>.json` directory
 
-<BlockListFormat></BlockListFormat>
+<BlockListFormat :compact="false"></BlockListFormat>
 
 ## Fluid list
 
 Loaded from the `assets/<namespace>/eg_particle_interactions/lists/fluids/<path>.json` directory
 
-<FluidListFormat></FluidListFormat>
+<FluidListFormat :compact="false"></FluidListFormat>
 
 ## Biome list
+
+<BiomeListFormat :compact="false"></BiomeListFormat>
 
 ## Entity type list

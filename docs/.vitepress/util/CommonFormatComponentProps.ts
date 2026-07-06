@@ -1,5 +1,5 @@
-export function commonProps(defaultName: string) {
-  return {
+export function commonProps(defaultName: string, extraProps: object) {
+  let props = {
     name: {
       type: String,
       required: false,
@@ -14,4 +14,6 @@ export function commonProps(defaultName: string) {
       required: false,
     },
   };
+  Object.assign(props, extraProps);
+  return props;
 }

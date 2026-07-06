@@ -1,11 +1,28 @@
 <script setup lang="ts">
 import { commonProps } from "../../../util/CommonFormatComponentProps.ts";
 
-const props = defineProps(commonProps("[html]<i>Fluid List</i>"));
+const defaultName = "[html]<i>Fluid List</i>";
+const defaultCompactName = "[html]<i>Compact Fluid List</i>";
+
+const props = defineProps(
+  commonProps(defaultName, {
+    compact: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+  }),
+);
+
+const name = props.name === defaultName && props.compact ? defaultCompactName : props.name;
 </script>
 
 <template>
-  <TreeGroup :colour="props.colour" :name="props.name" :desc="props.desc">
+  <TreeGroup v-if="props.compact" icon="list" :colour="props.colour" :name="name" :desc="props.desc">
+    <TreeField icon="identifier" name="<fluid id>" desc="A fluid id. This field accepts ids that may not actually exist" />
+    <TreeField icon="identifier" name="<tag id>" desc="[html]A fluid tag id, prefixed with a <code>#</code>. This field accepts ids that may not actually exist" />
+  </TreeGroup>
+  <TreeGroup v-else :colour="props.colour" :name="name" :desc="props.desc">
     <TreeGroup icon="list" name="fluids" desc="Optional. List of fluid or fluid tag ids">
       <TreeField icon="identifier" name="<fluid id>" desc="A fluid id. This field accepts ids that may not actually exist" />
       <TreeField icon="identifier" name="<tag id>" desc="[html]A fluid tag id, prefixed with a <code>#</code>. This field accepts ids that may not actually exist" />

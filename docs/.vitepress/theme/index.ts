@@ -11,6 +11,7 @@ import ParticleEmitterFormat from "../components/formats/ParticleEmitterFormat.v
 import ParticleEmitterRuleFormat from "../components/formats/ParticleEmitterRuleFormat.vue";
 import BlockListFormat from "../components/formats/lists/BlockListFormat.vue";
 import FluidListFormat from "../components/formats/lists/FluidListFormat.vue";
+import BiomeListFormat from "../components/formats/lists/BiomeListFormat.vue";
 import BlockStatePredicateFormat from "../components/formats/predicates/block/BlockStatePredicateFormat.vue";
 import FluidStatePredicateFormat from "../components/formats/predicates/fluid/FluidStatePredicateFormat.vue";
 import "./style.css";
@@ -32,6 +33,7 @@ export default {
     app.component("ParticleEmitterRuleFormat", ParticleEmitterRuleFormat);
     app.component("BlockListFormat", BlockListFormat);
     app.component("FluidListFormat", FluidListFormat);
+    app.component("BiomeListFormat", BiomeListFormat);
     app.component("BlockStatePredicateFormat", BlockStatePredicateFormat);
     app.component("FluidStatePredicateFormat", FluidStatePredicateFormat);
   },
