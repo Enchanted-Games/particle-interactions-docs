@@ -16,6 +16,12 @@ Loaded from the `assets/<namespace>/eg_particle_interactions/lists/fluids/<path>
 
 ## Biome list
 
+Loaded from the `assets/<namespace>/eg_particle_interactions/lists/biomes/<path>.json` directory
+
 <BiomeListFormat :compact="false"></BiomeListFormat>
 
 ## Entity type list
+
+Loaded from the `assets/<namespace>/eg_particle_interactions/lists/entities/<path>.json` directory
+
+<EntityListFormat :compact="false"></EntityListFormat>
