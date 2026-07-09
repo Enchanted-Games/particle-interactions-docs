@@ -20,6 +20,8 @@ import BlockPredicateFormat from "../components/formats/predicates/block/BlockPr
 import BlockListPredicateFormat from "../components/formats/predicates/block/BlockListPredicateFormat.vue";
 import BlockStatePredicateFormat from "../components/formats/predicates/block/BlockStatePredicateFormat.vue";
 
+import FluidPredicateFormat from "../components/formats/predicates/fluid/FluidPredicateFormat.vue";
+import FluidListPredicateFormat from "../components/formats/predicates/fluid/FluidListPredicateFormat.vue";
 import FluidStatePredicateFormat from "../components/formats/predicates/fluid/FluidStatePredicateFormat.vue";
 import "./style.css";
 
@@ -49,6 +51,8 @@ export default {
     app.component("BlockListPredicateFormat", BlockListPredicateFormat);
     app.component("BlockStatePredicateFormat", BlockStatePredicateFormat);
 
+    app.component("FluidPredicateFormat", FluidPredicateFormat);
+    app.component("FluidListPredicateFormat", FluidListPredicateFormat);
     app.component("FluidStatePredicateFormat", FluidStatePredicateFormat);
   },
 } satisfies Theme;
