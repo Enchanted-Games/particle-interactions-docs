@@ -23,6 +23,15 @@ import BlockStatePredicateFormat from "../components/formats/predicates/block/Bl
 import FluidPredicateFormat from "../components/formats/predicates/fluid/FluidPredicateFormat.vue";
 import FluidListPredicateFormat from "../components/formats/predicates/fluid/FluidListPredicateFormat.vue";
 import FluidStatePredicateFormat from "../components/formats/predicates/fluid/FluidStatePredicateFormat.vue";
+
+import BiomePredicateFormat from "../components/formats/predicates/biome/BiomePredicateFormat.vue";
+import BiomeListPredicateFormat from "../components/formats/predicates/biome/BiomeListPredicateFormat.vue";
+import SingleBiomePredicateFormat from "../components/formats/predicates/biome/SingleBiomePredicateFormat.vue";
+
+import EntityPredicateFormat from "../components/formats/predicates/entity/EntityPredicateFormat.vue";
+import EntityListPredicateFormat from "../components/formats/predicates/entity/EntityListPredicateFormat.vue";
+import SingleEntityPredicateFormat from "../components/formats/predicates/entity/SingleEntityPredicateFormat.vue";
+
 import "./style.css";
 
 export default {
@@ -54,5 +63,13 @@ export default {
     app.component("FluidPredicateFormat", FluidPredicateFormat);
     app.component("FluidListPredicateFormat", FluidListPredicateFormat);
     app.component("FluidStatePredicateFormat", FluidStatePredicateFormat);
+
+    app.component("BiomePredicateFormat", BiomePredicateFormat);
+    app.component("BiomeListPredicateFormat", BiomeListPredicateFormat);
+    app.component("SingleBiomePredicateFormat", SingleBiomePredicateFormat);
+
+    app.component("EntityPredicateFormat", EntityPredicateFormat);
+    app.component("EntityListPredicateFormat", EntityListPredicateFormat);
+    app.component("SingleEntityPredicateFormat", SingleEntityPredicateFormat);
   },
 } satisfies Theme;
