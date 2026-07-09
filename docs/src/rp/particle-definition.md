@@ -10,6 +10,10 @@ Particle definitions are loaded from the `assets/<namespace>/eg_particle_interac
 
 ## Particle components
 
+::: info
+List of particle components soon
+:::
+
 ## Behaviour types
 
 A behaviour type controls certain aspects of a particle that arent currently controlled via components. This mostly includes special particle models that arent the default billboarded quad
