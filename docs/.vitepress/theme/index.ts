@@ -32,6 +32,8 @@ import EntityPredicateFormat from "../components/formats/predicates/entity/Entit
 import EntityListPredicateFormat from "../components/formats/predicates/entity/EntityListPredicateFormat.vue";
 import SingleEntityPredicateFormat from "../components/formats/predicates/entity/SingleEntityPredicateFormat.vue";
 
+import ParticleDefinitionFormat from "../components/formats/ParticleDefinitionFormat.vue";
+
 import "./style.css";
 
 export default {
@@ -71,5 +73,7 @@ export default {
     app.component("EntityPredicateFormat", EntityPredicateFormat);
     app.component("EntityListPredicateFormat", EntityListPredicateFormat);
     app.component("SingleEntityPredicateFormat", SingleEntityPredicateFormat);
+
+    app.component("ParticleDefinitionFormat", ParticleDefinitionFormat);
   },
 } satisfies Theme;

@@ -21,6 +21,7 @@ export const sidebars: SidebarType = {
         { text: "Particle emitter rules", link: "particle-emitters" },
         { text: "Object lists", link: "object-lists" },
         { text: "Object predicates", link: "object-predicates" },
+        { text: "Particle definition", link: "particle-definition" },
       ],
     },
   ],
