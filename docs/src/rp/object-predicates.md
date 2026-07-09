@@ -16,6 +16,37 @@ Object predicates define tests against certain objects, such as blocks, fluids, 
 
 ## Fluid predicates
 
+<FluidPredicateFormat></FluidPredicateFormat>
+
+### `list` type
+
+<FluidListPredicateFormat name="" desc="fields"></FluidListPredicateFormat>
+
+### `fluid_state` type
+
+<FluidStatePredicateFormat name="" desc="fields"></FluidStatePredicateFormat>
+
+
 ## Biome predicates
 
+<BiomePredicateFormat></BiomePredicateFormat>
+
+### `list` type
+
+<BiomeListPredicateFormat name="" desc="fields"></BiomeListPredicateFormat>
+
+### `single_biome` type
+
+<SingleBiomePredicateFormat name="" desc="fields"></SingleBiomePredicateFormat>
+
 ## Entity type predicates
+
+<EntityPredicateFormat></EntityPredicateFormat>
+
+### `list` type
+
+<EntityListPredicateFormat name="" desc="fields"></EntityListPredicateFormat>
+
+### `single_entity` type
+
+<SingleEntityPredicateFormat name="" desc="fields"></SingleEntityPredicateFormat>

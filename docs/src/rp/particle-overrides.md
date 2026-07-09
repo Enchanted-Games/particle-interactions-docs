@@ -4,7 +4,7 @@ Particle overrides define a set of [particle emitter rules](/rp/particle-emitter
 
 Particle overrides are loaded from the `assets/<namespace>/eg_particle_interactions/particle_overrides/<path>.json` directory of a resourcepack, the id is based on what the file is called and tha namespace it is placed in. For example `assets/my_cool_pack/eg_particle_interactions/particle_overrides/sparkles_override.json` will resolve to `my_cool_pack:sparkles_override`.
 
-## Particle override JSON format
+## JSON format
 
 <ParticleOverrideFormat></ParticleOverrideFormat>
 
