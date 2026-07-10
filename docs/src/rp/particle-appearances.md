@@ -74,6 +74,21 @@ Calculates the redstone power level of a redstone component then returns the tin
 
 ## Model offset
 
+Model offset is applied in 'model space'.
+
+For the default billboarded quad model, it is a `1x1` quad centered around the origin `0, 0, 0`. This means a model offset of `[0, 0.5, 0]` would move it upwards so that the bottom edge is aligned with the origin. This offset is applied _before_ billboarding and scaling, so going with our `[0, 0.5, 0]` example, the billboarding would now be centered on the bottom face of the particle instead of the center.
+
+Below is an image demonstrating this for a particle with a scale of `3` and model offset of `[0, 0.5, 0]`
+
+<img src="/images/demo/model_offset.png" />
+
+1. Initial state of the model
+2. Model is offset by `0.5` vertically, now the bottom edge is aligned to the origin
+3. Billboarding is applied, notice how the bottom edge didnt move as billboarding is done relative to the origin.
+4. Finally the scale of `3` is applied
+
+Some particles present in the mod by default use this technique, such as surface lava bubble particles or honey drop particles when landed. This makes them look a little more natural as they are meant to look 'stuck' to the surface below them.
+
 ## UV provider types
 
 ### `simple` type
