@@ -59,3 +59,15 @@ A random entry from the palette for the current fluid state if the particle has 
 The [tint](https://minecraft.wiki/w/Block_colors) for the current fluid state if the particle has been spawned with a fluid context.
 
 <FluidTintColourSourceFormat name="" desc="fields"></FluidTintColourSourceFormat>
+
+### `variable` type
+
+Takes a base colour and ransomises it for each particle instance.
+
+<VariableColourSourceFormat name="" desc="fields"></VariableColourSourceFormat>
+
+### `redstone_power` type
+
+Calculates the redstone power level of a redstone component then returns the tint of redstone dust with that power level.
+
+<RedstonePowerColourSourceFormat name="" desc="fields"></RedstonePowerColourSourceFormat>

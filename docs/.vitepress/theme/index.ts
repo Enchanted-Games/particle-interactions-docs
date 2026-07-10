@@ -47,6 +47,8 @@ import BlockTextureColourSourceFormat from "../components/formats/appearance/col
 import BlockTintColourSourceFormat from "../components/formats/appearance/colour/BlockTintColourSourceFormat.vue";
 import FluidTextureColourSourceFormat from "../components/formats/appearance/colour/FluidTextureColourSourceFormat.vue";
 import FluidTintColourSourceFormat from "../components/formats/appearance/colour/FluidTintColourSourceFormat.vue";
+import VariableColourSourceFormat from "../components/formats/appearance/colour/VariableColourSourceFormat.vue";
+import RedstonePowerColourSourceFormat from "../components/formats/appearance/colour/RedstonePowerColourSourceFormat.vue";
 
 import FloatProviderFormat from "../components/formats/utility/FloatProviderFormat.vue";
 import IntProviderFormat from "../components/formats/utility/IntProviderFormat.vue";
@@ -108,6 +110,8 @@ export default {
     app.component("BlockTintColourSourceFormat", BlockTintColourSourceFormat);
     app.component("FluidTextureColourSourceFormat", FluidTextureColourSourceFormat);
     app.component("FluidTintColourSourceFormat", FluidTintColourSourceFormat);
+    app.component("VariableColourSourceFormat", VariableColourSourceFormat);
+    app.component("RedstonePowerColourSourceFormat", RedstonePowerColourSourceFormat);
 
     app.component("FloatProviderFormat", FloatProviderFormat);
     app.component("IntProviderFormat", IntProviderFormat);
