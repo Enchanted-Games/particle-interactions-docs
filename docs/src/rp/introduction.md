@@ -54,6 +54,10 @@ A file located at `assets/<namespace>/eg_particle_interactions/particles/<path>.
 
 A file located at `assets/<namespace>/eg_particle_interactions/appearances/<path>.json` in a resourcepack which controls the visual appearance of a particle, such as its texture, light emission, scale, etc.
 
+### Palette override
+
+A file located at `assets/<namespace>/eg_particle_interactions/palettes/<object_type>/<path>.json` in a resourcepack that defines a custom particle palette for block/fluid states.
+
 ### Particle Interactions identifier
 
 A version of vanilla Minecraft [Identifiers](https://minecraft.wiki/w/Identifier), however if no namespace is specified it will default to `eg_particle_interactions` instead of `minecraft`.

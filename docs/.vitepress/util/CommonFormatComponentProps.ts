@@ -1,4 +1,4 @@
-export function commonProps(defaultName: string, extraProps: object) {
+export function commonProps(defaultName: string, extraProps: object = {}) {
   let props = {
     name: {
       type: String,

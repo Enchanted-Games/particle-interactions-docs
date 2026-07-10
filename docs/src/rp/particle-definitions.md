@@ -1,6 +1,6 @@
-# Particle definition
+# Particle definitions
 
-A particle definition defines a set of components to control the behaviour of a particle, such as the particles lifetime, friction, bounciness, etc.
+A particle definitions defines a set of components to control the behaviour of a particle, such as the particles lifetime, friction, bounciness, etc.
 
 Particle definitions are loaded from the `assets/<namespace>/eg_particle_interactions/particles/<path>.json` directory of a resourcepack. If two resourcepacks define a particle definition with the same namespace and id, the pack with a higher load order takes priority and does not stack with other packs with a lower load order.
 
