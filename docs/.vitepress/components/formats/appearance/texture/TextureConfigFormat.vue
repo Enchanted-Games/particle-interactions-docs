@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { commonProps } from "../../../util/CommonFormatComponentProps.ts";
+import { commonProps } from "../../../../util/CommonFormatComponentProps.ts";
 
 const props = defineProps(commonProps("[html]<i>Texture Config</i>"));
 </script>

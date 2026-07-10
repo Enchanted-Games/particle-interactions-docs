@@ -35,13 +35,23 @@ import SingleEntityPredicateFormat from "../components/formats/predicates/entity
 import ParticleDefinitionFormat from "../components/formats/ParticleDefinitionFormat.vue";
 
 import ParticleAppearanceFormat from "../components/formats/appearance/ParticleAppearanceFormat.vue";
-import TextureConfigFormat from "../components/formats/appearance/TextureConfigFormat.vue";
-import SpritesTextureConfigFormat from "../components/formats/appearance/SpritesTextureConfigFormat.vue";
-import BlockTextureConfigFormat from "../components/formats/appearance/BlockTextureConfigFormat.vue";
-import FluidTextureConfigFormat from "../components/formats/appearance/FluidTextureConfigFormat.vue";
+
+import TextureConfigFormat from "../components/formats/appearance/texture/TextureConfigFormat.vue";
+import SpritesTextureConfigFormat from "../components/formats/appearance/texture/SpritesTextureConfigFormat.vue";
+import BlockTextureConfigFormat from "../components/formats/appearance/texture/BlockTextureConfigFormat.vue";
+import FluidTextureConfigFormat from "../components/formats/appearance/texture/FluidTextureConfigFormat.vue";
+
+import ColourSourceFormat from "../components/formats/appearance/colour/ColourSourceFormat.vue";
+import ConstantColourSourceFormat from "../components/formats/appearance/colour/ConstantColourSourceFormat.vue";
+import BlockTextureColourSourceFormat from "../components/formats/appearance/colour/BlockTextureColourSourceFormat.vue";
+import BlockTintColourSourceFormat from "../components/formats/appearance/colour/BlockTintColourSourceFormat.vue";
+import FluidTextureColourSourceFormat from "../components/formats/appearance/colour/FluidTextureColourSourceFormat.vue";
+import FluidTintColourSourceFormat from "../components/formats/appearance/colour/FluidTintColourSourceFormat.vue";
 
 import FloatProviderFormat from "../components/formats/utility/FloatProviderFormat.vue";
 import IntProviderFormat from "../components/formats/utility/IntProviderFormat.vue";
+import RGBColourFormat from "../components/formats/utility/RGBColourFormat.vue";
+import FluidTextureTypeFormat from "../components/formats/utility/FluidTextureTypeFormat.vue";
 
 import "./style.css";
 
@@ -86,12 +96,22 @@ export default {
     app.component("ParticleDefinitionFormat", ParticleDefinitionFormat);
 
     app.component("ParticleAppearanceFormat", ParticleAppearanceFormat);
+
     app.component("TextureConfigFormat", TextureConfigFormat);
     app.component("SpritesTextureConfigFormat", SpritesTextureConfigFormat);
     app.component("BlockTextureConfigFormat", BlockTextureConfigFormat);
     app.component("FluidTextureConfigFormat", FluidTextureConfigFormat);
 
+    app.component("ColourSourceFormat", ColourSourceFormat);
+    app.component("ConstantColourSourceFormat", ConstantColourSourceFormat);
+    app.component("BlockTextureColourSourceFormat", BlockTextureColourSourceFormat);
+    app.component("BlockTintColourSourceFormat", BlockTintColourSourceFormat);
+    app.component("FluidTextureColourSourceFormat", FluidTextureColourSourceFormat);
+    app.component("FluidTintColourSourceFormat", FluidTintColourSourceFormat);
+
     app.component("FloatProviderFormat", FloatProviderFormat);
     app.component("IntProviderFormat", IntProviderFormat);
+    app.component("RGBColourFormat", RGBColourFormat);
+    app.component("FluidTextureTypeFormat", FluidTextureTypeFormat);
   },
 } satisfies Theme;

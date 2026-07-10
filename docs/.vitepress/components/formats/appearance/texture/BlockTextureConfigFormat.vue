@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { commonProps } from "../../../util/CommonFormatComponentProps.ts";
+import { commonProps } from "../../../../util/CommonFormatComponentProps.ts";
 import ParticleLayersFormat from "./ParticleLayersFormat.vue";
 
 const props = defineProps(commonProps("[html]<i>Block Texture Config Type</i>"));

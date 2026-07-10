@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { commonProps } from "../../../util/CommonFormatComponentProps.ts";
+import { commonProps } from "../../../../util/CommonFormatComponentProps.ts";
 import ParticleLayersFormat from "./ParticleLayersFormat.vue";
 
 const props = defineProps(commonProps("[html]<i>Fluid Texture Config Type</i>"));
@@ -10,6 +10,6 @@ const props = defineProps(commonProps("[html]<i>Fluid Texture Config Type</i>"))
     <TreeField icon="list" name="fallback_sprites" desc="List of sprites to use for the particle" />
     <TreeField icon="identifier" name="fallback_atlas" desc="[html]Optional, defaults to <code>minecraft:particles</code>. Which <a href='https://minecraft.wiki/w/Atlas#List_of_atlases' target='_blank'>texture atlas</a> to use for the sprites" />
     <ParticleLayersFormat name="layer"></ParticleLayersFormat>
-    <TreeField icon="string" name="texture_type" desc="[html]Optional, defaults to <code>still</code>. Can be either <code>still</code> or <code>flowing</code> to use either the still or flowing texture of the fluid" />
+    <FluidTextureTypeFormat name="texture_type"></FluidTextureTypeFormat>
   </TreeGroup>
 </template>
