@@ -34,6 +34,15 @@ import SingleEntityPredicateFormat from "../components/formats/predicates/entity
 
 import ParticleDefinitionFormat from "../components/formats/ParticleDefinitionFormat.vue";
 
+import ParticleAppearanceFormat from "../components/formats/appearance/ParticleAppearanceFormat.vue";
+import TextureConfigFormat from "../components/formats/appearance/TextureConfigFormat.vue";
+import SpritesTextureConfigFormat from "../components/formats/appearance/SpritesTextureConfigFormat.vue";
+import BlockTextureConfigFormat from "../components/formats/appearance/BlockTextureConfigFormat.vue";
+import FluidTextureConfigFormat from "../components/formats/appearance/FluidTextureConfigFormat.vue";
+
+import FloatProviderFormat from "../components/formats/utility/FloatProviderFormat.vue";
+import IntProviderFormat from "../components/formats/utility/IntProviderFormat.vue";
+
 import "./style.css";
 
 export default {
@@ -75,5 +84,14 @@ export default {
     app.component("SingleEntityPredicateFormat", SingleEntityPredicateFormat);
 
     app.component("ParticleDefinitionFormat", ParticleDefinitionFormat);
+
+    app.component("ParticleAppearanceFormat", ParticleAppearanceFormat);
+    app.component("TextureConfigFormat", TextureConfigFormat);
+    app.component("SpritesTextureConfigFormat", SpritesTextureConfigFormat);
+    app.component("BlockTextureConfigFormat", BlockTextureConfigFormat);
+    app.component("FluidTextureConfigFormat", FluidTextureConfigFormat);
+
+    app.component("FloatProviderFormat", FloatProviderFormat);
+    app.component("IntProviderFormat", IntProviderFormat);
   },
 } satisfies Theme;
