@@ -71,3 +71,19 @@ Takes a base colour and ransomises it for each particle instance.
 Calculates the redstone power level of a redstone component then returns the tint of redstone dust with that power level.
 
 <RedstonePowerColourSourceFormat name="" desc="fields"></RedstonePowerColourSourceFormat>
+
+## Model offset
+
+## UV provider types
+
+### `simple` type
+
+<SimpleUVProviderFormat name="" desc="fields"></SimpleUVProviderFormat>
+
+### `random_within_sprite` type
+
+Picks a random section of the current sprite to display based on the particle scale, this works in a very similar way to how vanilla `block` particles look.
+
+Whenever the sprite changes, a different section of the new sprite is chosen to be displayed.
+
+<RandomUVProviderFormat name="" desc="fields"></RandomUVProviderFormat>

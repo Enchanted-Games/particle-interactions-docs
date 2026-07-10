@@ -50,10 +50,15 @@ import FluidTintColourSourceFormat from "../components/formats/appearance/colour
 import VariableColourSourceFormat from "../components/formats/appearance/colour/VariableColourSourceFormat.vue";
 import RedstonePowerColourSourceFormat from "../components/formats/appearance/colour/RedstonePowerColourSourceFormat.vue";
 
+import UVProviderFormat from "../components/formats/appearance/uv/UVProviderFormat.vue";
+import SimpleUVProviderFormat from "../components/formats/appearance/uv/SimpleUVProviderFormat.vue";
+import RandomUVProviderFormat from "../components/formats/appearance/uv/RandomUVProviderFormat.vue";
+
 import FloatProviderFormat from "../components/formats/utility/FloatProviderFormat.vue";
 import IntProviderFormat from "../components/formats/utility/IntProviderFormat.vue";
 import RGBColourFormat from "../components/formats/utility/RGBColourFormat.vue";
 import FluidTextureTypeFormat from "../components/formats/utility/FluidTextureTypeFormat.vue";
+import Vector3Format from "../components/formats/utility/Vector3Format.vue";
 
 import "./style.css";
 
@@ -113,9 +118,14 @@ export default {
     app.component("VariableColourSourceFormat", VariableColourSourceFormat);
     app.component("RedstonePowerColourSourceFormat", RedstonePowerColourSourceFormat);
 
+    app.component("UVProviderFormat", UVProviderFormat);
+    app.component("SimpleUVProviderFormat", SimpleUVProviderFormat);
+    app.component("RandomUVProviderFormat", RandomUVProviderFormat);
+
     app.component("FloatProviderFormat", FloatProviderFormat);
     app.component("IntProviderFormat", IntProviderFormat);
     app.component("RGBColourFormat", RGBColourFormat);
     app.component("FluidTextureTypeFormat", FluidTextureTypeFormat);
+    app.component("Vector3Format", Vector3Format);
   },
 } satisfies Theme;
