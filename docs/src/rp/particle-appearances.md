@@ -38,7 +38,7 @@ For this type, the translucency is calculated automatically. The `layer` field i
 
 ### `block_texture` type
 
-A random entry from the palette for the current block state if the particle has been spawned with a block context. See [Particle Palettes](/rp/particle-palettes) for more info.
+A random entry from the palette for the current block state if the particle has been spawned with a block context. See [Particle Palettes](/rp/palette-overrides) for more info.
 
 <BlockTextureColourSourceFormat name="" desc="fields"></BlockTextureColourSourceFormat>
 
@@ -50,7 +50,7 @@ The [tint](https://minecraft.wiki/w/Block_colors) for the current block state if
 
 ### `fluid_texture` type
 
-A random entry from the palette for the current fluid state if the particle has been spawned with a fluid context. See [Particle Palettes](/rp/particle-palettes) for more info.
+A random entry from the palette for the current fluid state if the particle has been spawned with a fluid context. See [Particle Palettes](/rp/palette-overrides) for more info.
 
 <FluidTextureColourSourceFormat name="" desc="fields"></FluidTextureColourSourceFormat>
 

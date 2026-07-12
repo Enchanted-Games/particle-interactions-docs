@@ -23,6 +23,8 @@ export const sidebars: SidebarType = {
         { text: "Object predicates", link: "object-predicates" },
         { text: "Particle definitions", link: "particle-definitions" },
         { text: "Particle appearances", link: "particle-appearances" },
+        { text: "Events", link: "events" },
+        { text: "Particle palettes", link: "palette-overrides" },
       ],
     },
   ],
