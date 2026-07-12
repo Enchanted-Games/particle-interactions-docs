@@ -54,6 +54,11 @@ import UVProviderFormat from "../components/formats/appearance/uv/UVProviderForm
 import SimpleUVProviderFormat from "../components/formats/appearance/uv/SimpleUVProviderFormat.vue";
 import RandomUVProviderFormat from "../components/formats/appearance/uv/RandomUVProviderFormat.vue";
 
+import BlockPaletteOverrideFormat from "../components/formats/palettes/BlockPaletteOverrideFormat.vue";
+import FluidPaletteOverrideFormat from "../components/formats/palettes/FluidPaletteOverrideFormat.vue";
+import StaticPaletteTypeFormat from "../components/formats/palettes/types/StaticPaletteTypeFormat.vue";
+import TexturePaletteTypeFormat from "../components/formats/palettes/types/TexturePaletteTypeFormat.vue";
+
 import FloatProviderFormat from "../components/formats/utility/FloatProviderFormat.vue";
 import IntProviderFormat from "../components/formats/utility/IntProviderFormat.vue";
 import RGBColourFormat from "../components/formats/utility/RGBColourFormat.vue";
@@ -121,6 +126,11 @@ export default {
     app.component("UVProviderFormat", UVProviderFormat);
     app.component("SimpleUVProviderFormat", SimpleUVProviderFormat);
     app.component("RandomUVProviderFormat", RandomUVProviderFormat);
+
+    app.component("BlockPaletteOverrideFormat", BlockPaletteOverrideFormat);
+    app.component("FluidPaletteOverrideFormat", FluidPaletteOverrideFormat);
+    app.component("StaticPaletteTypeFormat", StaticPaletteTypeFormat);
+    app.component("TexturePaletteTypeFormat", TexturePaletteTypeFormat);
 
     app.component("FloatProviderFormat", FloatProviderFormat);
     app.component("IntProviderFormat", IntProviderFormat);
