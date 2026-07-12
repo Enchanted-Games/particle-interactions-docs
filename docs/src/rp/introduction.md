@@ -18,45 +18,45 @@ You can use any text editor of your choice, preferrably one with JSON support. I
 
 A quick explanation of some terminology which will be used throughout these docs. Most of these have dedicated pages which go into more detail about how they work, this is section just serves as a brief guide.
 
-### Particle override
+### [Particle override](/rp/particle-overrides)
 
-A file located at `assets/<namespace>/eg_particle_interactions/particle_overrides/<path>.json` in a resourcepack. A particle override defines a set of [particle emitter rules](#particle-emitter-rules) for various [particle origins](#particle-origin).
+A particle override defines a set of [particle emitter rules](#particle-emitter-rules) for various [particle origins](#particle-origin). These are used for specifying custom particles for specific blocks as an example.
 
-### Override rule
+### [Override rule](/rp/particle-overrides#override-rules)
 
-A file located at `assets/<namespace>/eg_particle_interactions/override_rules/<object_type>/<path>.json` in a resourcepack, which defines what objects a particle override should be applied to. For example `assets/my_cool_pack/eg_particle_interactions/override_rules/blocks/sparkles_override.json` would define which blocks the particle override `my_cool_pack:sparkles_override` should apply to.
+Override rules defines what objects a particle override should be applied to.
 
-### Particle origin
+### [Particle origin](/rp/particle-origins)
 
 A place where a particle is being spawned from, for example `block/broken` if the particle is coming from a block being broken.
 
-### Particle emitter rule
+### [Particle emitter rule](/rp/particle-emitters)
 
-A file located at `assets/<namespace>/eg_particle_interactions/emitter_rules/<path>.json` in a resourcepack which contains rules about which [particle emitter type](#particle-emitter-type) to use in a given context, as well as a fallback particle emitter which is used when no rules pass. These can often be inlined directly in files or be referenced by id in other files.
+A particle emitter rule contains rules about which [particle emitter type](#particle-emitter-type) to use in a given context, as well as a fallback particle emitter which is used when no rules pass. These can often be inlined directly in files or be referenced by id in other files.
 
-### Particle emitter type
+### [Particle emitter type](/rp/particle-emitters#emitter-types)
 
 An object that defines a particle to emit with an optional velocity multiplier and position offset. Particle emitter types can emit a resourcepack-driven particle from any resourcepack or a particle from the vanilla particle_types registry.
 
-### Object list
+### [Object list](/rp/object-lists)
 
-A file located at `assets/<namespace>/eg_particle_interactions/lists/<object_type>/<path>.json` in a resourcepack which contain a list of blocks, fluids, biomes, or entity types. These can be referenced within other files and function in a similar way to tags in vanilla datapacks; that being that the contents are combined from multiple resourcepacks if both of them add entries to the same list.
+Contains a list of blocks, fluids, biomes, or entity types. These can be referenced within other files and function in a similar way to tags in vanilla datapacks; that being that the contents are combined from multiple resourcepacks if both of them add entries to the same list.
 
-### Object predicates
+### [Object predicates](/rp/object-predicates)
 
 An object that defines tests against certain objects, such as blocks, fluids, biomes, or entity types.
 
-### Particle definition
+### [Particle definition](/rp/particle-definitions)
 
-A file located at `assets/<namespace>/eg_particle_interactions/particles/<path>.json` in a resourcepack which contains a set of components to control the behaviour of a particle.
+A particle definition contains a set of components to control the behaviour of a particle.
 
-### Particle appearance
+### [Particle appearance](/rp/particle-appearances)
 
-A file located at `assets/<namespace>/eg_particle_interactions/appearances/<path>.json` in a resourcepack which controls the visual appearance of a particle, such as its texture, light emission, scale, etc.
+A particle appearance controls the visual appearance of a particle, such as its texture, light emission, scale, etc.
 
-### Palette override
+### [Palette override](/rp/palette-overrides)
 
-A file located at `assets/<namespace>/eg_particle_interactions/palettes/<object_type>/<path>.json` in a resourcepack that defines a custom particle palette for block/fluid states.
+A palette override defines a custom set of particle colours for block and fluid states.
 
 ### Particle Interactions identifier
 
