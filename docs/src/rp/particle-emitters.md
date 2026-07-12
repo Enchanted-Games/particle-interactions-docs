@@ -8,6 +8,40 @@ Particle emitter rules are loaded from the `assets/<namespace>/eg_particle_inter
 
 <ParticleEmitterRuleFormat />
 
+### Examples
+
+This emitter rule will spawn the `my_cool_pack:sparkle` particle by default. If it is being used in a block context, and the block is in the `my_cool_pack:soul_sparkles` [block list](/rp/object-lists#block-list), it will spawn the same particle but with the appearance `my_cool_pack:soul_sparkle` instead.
+
+```json
+// assets/my_cool_pack/eg_particle_interactions/emitter_rules/sparkles-emitter.json
+{
+    "rules": [
+        {
+            "conditions": [
+                {
+                    "type": "block",
+                    "predicate": {
+                        "type": "list",
+                        "blocks": "my_cool_pack:soul_sparkles"
+                    }
+                }
+            ],
+            "emitter": {
+                "type": "particle_interactions",
+                "particle": "my_cool_pack:sparkle",
+                "components": {
+                    "appearance": "my_cool_pack:soul_sparkle"
+                }
+            }
+        }
+    ],
+    "fallback_emitter": {
+        "type": "particle_interactions",
+        "particle": "my_cool_pack:sparkle"
+    }
+}
+```
+
 ## Condition types
 
 ::: info
