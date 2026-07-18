@@ -14,7 +14,7 @@ const props = defineProps(
 
 <template>
   <TreeGroup :colour="props.colour" :name="props.name" :desc="props.desc">
-    <TreeField v-if="props.showid" icon="identifier" name="<block id>" desc="Optional. A block id, must be a valid registerred block" />
+    <TreeField v-if="props.showid" icon="identifier" name="<block id>" desc="Optional. A block id, must be a valid registerred block. If not specified, the predicate will match against any block with the specified states." />
     <TreeGroup icon="object" name="properties" desc="Optional. Block state properties to test for">
       <TreeField icon="string" name="<property name>" desc="A blockstate property name and value to test for" />
     </TreeGroup>
