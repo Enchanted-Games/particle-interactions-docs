@@ -44,9 +44,59 @@ This emitter rule will spawn the `my_cool_pack:sparkle` particle by default. If 
 
 ## Condition types
 
-::: info
-List of condition types soon
-:::
+### `block` type
+
+Tests the current block against a block state predicate if the emitter rule is being used in a block context. Always fails if not a block context.
+
+<BlockConditionTypeFormat name="" desc="fields"></BlockConditionTypeFormat>
+
+### `fluid` type
+
+Tests the current fluid against a fluid state predicate if the emitter rule is being used in a fluid context. Always fails if not a fluid context.
+
+<FluidConditionTypeFormat name="" desc="fields"></FluidConditionTypeFormat>
+
+### `biome` type
+
+Tests the biome at the emitter position against a biome predicate.
+
+<BiomeConditionTypeFormat name="" desc="fields"></BiomeConditionTypeFormat>
+
+### `entity` type
+
+Tests the current entity type against an entity type predicate if the emitter rule is being used in an entity context. Always fails if not an entity context.
+
+<EntityConditionTypeFormat name="" desc="fields"></EntityConditionTypeFormat>
+
+### `light_level` type
+
+Tests the current [sky](https://minecraft.wiki/w/Light#Sky_light) and [block](https://minecraft.wiki/w/Light#Block_light) light values as displayed in the F3 debug overlay.
+
+<LightLevelConditionTypeFormat name="" desc="fields"></LightLevelConditionTypeFormat>
+
+### `raw_light` type
+
+Tests the [raw light value](https://minecraft.wiki/w/Light#Internal_sky_light) at the emitter position.
+
+<RawLightConditionTypeFormat name="" desc="fields"></RawLightConditionTypeFormat>
+
+### `logic/and` type
+
+Passes if all sub-conditions pass.
+
+<AndLogicConditionTypeFormat name="" desc="fields"></AndLogicConditionTypeFormat>
+
+### `logic/or` type
+
+Passes if at least one of the sub-conditions pass.
+
+<OrLogicConditionTypeFormat name="" desc="fields"></OrLogicConditionTypeFormat>
+
+### `logic/not` type
+
+Inverts the result of a condition. For example if the sub-condition passes then this condition will fail, and vice versa.
+
+<NotLogicConditionTypeFormat name="" desc="fields"></NotLogicConditionTypeFormat>
 
 ## Emitter types
 
