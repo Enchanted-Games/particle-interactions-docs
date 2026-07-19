@@ -23,6 +23,10 @@ import AndLogicConditionTypeFormat from "../components/formats/emitter/condition
 import OrLogicConditionTypeFormat from "../components/formats/emitter/conditions/OrLogicConditionTypeFormat.vue";
 import NotLogicConditionTypeFormat from "../components/formats/emitter/conditions/NotLogicConditionTypeFormat.vue";
 
+import ParticleInteractionsEmitterType from "../components/formats/emitter/types/ParticleInteractionsEmitterType.vue";
+import VanillaEmitterType from "../components/formats/emitter/types/VanillaEmitterType.vue";
+import SpecialParticleEmitterType from "../components/formats/emitter/types/SpecialParticleEmitterType.vue";
+
 import BlockListFormat from "../components/formats/lists/BlockListFormat.vue";
 import FluidListFormat from "../components/formats/lists/FluidListFormat.vue";
 import BiomeListFormat from "../components/formats/lists/BiomeListFormat.vue";
@@ -108,6 +112,10 @@ export default {
     app.component("AndLogicConditionTypeFormat", AndLogicConditionTypeFormat);
     app.component("OrLogicConditionTypeFormat", OrLogicConditionTypeFormat);
     app.component("NotLogicConditionTypeFormat", NotLogicConditionTypeFormat);
+
+    app.component("ParticleInteractionsEmitterType", ParticleInteractionsEmitterType);
+    app.component("VanillaEmitterType", VanillaEmitterType);
+    app.component("SpecialParticleEmitterType", SpecialParticleEmitterType);
 
     app.component("BlockListFormat", BlockListFormat);
     app.component("FluidListFormat", FluidListFormat);

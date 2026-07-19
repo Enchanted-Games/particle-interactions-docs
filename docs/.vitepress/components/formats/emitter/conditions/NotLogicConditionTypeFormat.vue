@@ -6,6 +6,6 @@ const props = defineProps(commonProps("[html]<i>Not Logic Condition</i>"));
 
 <template>
   <TreeGroup :colour="props.colour" :name="props.name" :desc="props.desc">
-    <EmitterConditionFormat name="Condition" desc="A condition."></EmitterConditionFormat>
+    <EmitterConditionFormat name="condition" desc="A condition."></EmitterConditionFormat>
   </TreeGroup>
 </template>

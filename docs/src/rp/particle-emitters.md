@@ -97,9 +97,3 @@ Passes if at least one of the sub-conditions pass.
 Inverts the result of a condition. For example if the sub-condition passes then this condition will fail, and vice versa.
 
 <NotLogicConditionTypeFormat name="" desc="fields"></NotLogicConditionTypeFormat>
-
-## Emitter types
-
-::: info
-List of emitter types soon
-:::
