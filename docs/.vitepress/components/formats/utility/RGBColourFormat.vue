@@ -6,6 +6,12 @@ const actualDesc = props.desc == undefined ? "" : props.desc;
 </script>
 
 <template>
-  <TreeField icon="string" :colour="props.colour" :name="props.name" :desc="'[html]Hex code format, an RGB or ARGB hex code prefixed with a <code>#</code>. For example, <code>#ff0000</code> for red. ' + actualDesc"></TreeField>
-  <TreeGroup icon="list" :colour="props.colour" :name="props.name" :desc="'[html]RGBA list format, a list of exactly 4 <code>0-255</code> integer values. For example, <code>[255, 0, 0, 127]</code> for translucent red. ' + actualDesc"></TreeGroup>
+  <TreeField
+    icon="string|list"
+    :colour="props.colour"
+    :name="props.name"
+    :desc="
+      '[html]Hex colour code or ARGB list. Hex code format: an RGB or ARGB hex code prefixed with a <code>#</code>, for example <code>#ff0000</code> for red. ARGB list format: a list of exactly 4 <code>0-255</code> integer values, for example <code>[127, 255, 0, 0]</code> for translucent red. ' +
+      actualDesc
+    "></TreeField>
 </template>

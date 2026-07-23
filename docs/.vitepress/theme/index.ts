@@ -8,8 +8,25 @@ import TreeGroup from "../components/TreeGroup.vue";
 import TreeField from "../components/TreeField.vue";
 
 import ParticleOverrideFormat from "../components/formats/ParticleOverrideFormat.vue";
-import ParticleEmitterFormat from "../components/formats/ParticleEmitterFormat.vue";
-import ParticleEmitterRuleFormat from "../components/formats/ParticleEmitterRuleFormat.vue";
+
+import ParticleEmitterFormat from "../components/formats/emitter/ParticleEmitterFormat.vue";
+import ParticleEmitterRuleFormat from "../components/formats/emitter/ParticleEmitterRuleFormat.vue";
+import EmitterConditionFormat from "../components/formats/emitter/EmitterConditionFormat.vue";
+
+import BlockConditionTypeFormat from "../components/formats/emitter/conditions/BlockConditionTypeFormat.vue";
+import FluidConditionTypeFormat from "../components/formats/emitter/conditions/FluidConditionTypeFormat.vue";
+import BiomeConditionTypeFormat from "../components/formats/emitter/conditions/BiomeConditionTypeFormat.vue";
+import EntityConditionTypeFormat from "../components/formats/emitter/conditions/EntityConditionTypeFormat.vue";
+import LightLevelConditionTypeFormat from "../components/formats/emitter/conditions/LightLevelConditionTypeFormat.vue";
+import RawLightConditionTypeFormat from "../components/formats/emitter/conditions/RawLightConditionTypeFormat.vue";
+import AndLogicConditionTypeFormat from "../components/formats/emitter/conditions/AndLogicConditionTypeFormat.vue";
+import OrLogicConditionTypeFormat from "../components/formats/emitter/conditions/OrLogicConditionTypeFormat.vue";
+import NotLogicConditionTypeFormat from "../components/formats/emitter/conditions/NotLogicConditionTypeFormat.vue";
+
+import ParticleInteractionsEmitterType from "../components/formats/emitter/types/ParticleInteractionsEmitterType.vue";
+import VanillaEmitterType from "../components/formats/emitter/types/VanillaEmitterType.vue";
+import SpecialParticleEmitterType from "../components/formats/emitter/types/SpecialParticleEmitterType.vue";
+import RandomEmitterType from "../components/formats/emitter/types/RandomEmitterType.vue";
 
 import BlockListFormat from "../components/formats/lists/BlockListFormat.vue";
 import FluidListFormat from "../components/formats/lists/FluidListFormat.vue";
@@ -64,6 +81,7 @@ import IntProviderFormat from "../components/formats/utility/IntProviderFormat.v
 import RGBColourFormat from "../components/formats/utility/RGBColourFormat.vue";
 import FluidTextureTypeFormat from "../components/formats/utility/FluidTextureTypeFormat.vue";
 import Vector3Format from "../components/formats/utility/Vector3Format.vue";
+import Vector3iFormat from "../components/formats/utility/Vector3iFormat.vue";
 
 import "./style.css";
 
@@ -81,8 +99,25 @@ export default {
     app.component("TreeField", TreeField);
 
     app.component("ParticleOverrideFormat", ParticleOverrideFormat);
+
     app.component("ParticleEmitterFormat", ParticleEmitterFormat);
     app.component("ParticleEmitterRuleFormat", ParticleEmitterRuleFormat);
+    app.component("EmitterConditionFormat", EmitterConditionFormat);
+
+    app.component("BlockConditionTypeFormat", BlockConditionTypeFormat);
+    app.component("FluidConditionTypeFormat", FluidConditionTypeFormat);
+    app.component("BiomeConditionTypeFormat", BiomeConditionTypeFormat);
+    app.component("EntityConditionTypeFormat", EntityConditionTypeFormat);
+    app.component("LightLevelConditionTypeFormat", LightLevelConditionTypeFormat);
+    app.component("RawLightConditionTypeFormat", RawLightConditionTypeFormat);
+    app.component("AndLogicConditionTypeFormat", AndLogicConditionTypeFormat);
+    app.component("OrLogicConditionTypeFormat", OrLogicConditionTypeFormat);
+    app.component("NotLogicConditionTypeFormat", NotLogicConditionTypeFormat);
+
+    app.component("ParticleInteractionsEmitterType", ParticleInteractionsEmitterType);
+    app.component("VanillaEmitterType", VanillaEmitterType);
+    app.component("SpecialParticleEmitterType", SpecialParticleEmitterType);
+    app.component("RandomEmitterType", RandomEmitterType);
 
     app.component("BlockListFormat", BlockListFormat);
     app.component("FluidListFormat", FluidListFormat);
@@ -137,5 +172,6 @@ export default {
     app.component("RGBColourFormat", RGBColourFormat);
     app.component("FluidTextureTypeFormat", FluidTextureTypeFormat);
     app.component("Vector3Format", Vector3Format);
+    app.component("Vector3iFormat", Vector3iFormat);
   },
 } satisfies Theme;

@@ -14,7 +14,7 @@ const props = defineProps(
 
 <template>
   <TreeGroup :colour="props.colour" :name="props.name" :desc="props.desc">
-    <TreeField v-if="props.showid" icon="identifier" name="<fluid id>" desc="Optional. A fluid id, must be a valid registerred fluid" />
+    <TreeField v-if="props.showid" icon="identifier" name="<fluid id>" desc="Optional. A fluid id, must be a valid registerred fluid. If not specified, the predicate will match against any block with the specified states." />
     <TreeGroup icon="object" name="properties" desc="Optional. Fluid state properties to test for">
       <TreeField icon="string" name="<property name>" desc="A fluidstate property name and value to test for" />
     </TreeGroup>
