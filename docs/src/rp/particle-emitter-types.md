@@ -2,10 +2,6 @@
 
 ## Emitter types
 
-::: info
-List of emitter types WIP
-:::
-
 ### `particle_interactions` type
 
 Emits a [particle definition](/rp/particle-definitions)
@@ -23,6 +19,16 @@ Emits a particle from the vanilla `particle_types` registry. This includes all v
 Emits a [special particle type](#special-particle-types). These are used for emitting multiple particles over time, or for spawning specific vanilla particles with data from the particle context that the emitter is being used in.
 
 <SpecialParticleEmitterType name="" desc="fields"></SpecialParticleEmitterType>
+
+### `empty` type
+
+Doens't emit any particles. Has no additional fields.
+
+### `random` type
+
+Uses a weight-based random to choose a random emitter type to use.
+
+<RandomEmitterType name="" desc="fields"></RandomEmitterType>
 
 ## Special particle types
 

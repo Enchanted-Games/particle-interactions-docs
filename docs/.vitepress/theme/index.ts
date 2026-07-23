@@ -26,6 +26,7 @@ import NotLogicConditionTypeFormat from "../components/formats/emitter/condition
 import ParticleInteractionsEmitterType from "../components/formats/emitter/types/ParticleInteractionsEmitterType.vue";
 import VanillaEmitterType from "../components/formats/emitter/types/VanillaEmitterType.vue";
 import SpecialParticleEmitterType from "../components/formats/emitter/types/SpecialParticleEmitterType.vue";
+import RandomEmitterType from "../components/formats/emitter/types/RandomEmitterType.vue";
 
 import BlockListFormat from "../components/formats/lists/BlockListFormat.vue";
 import FluidListFormat from "../components/formats/lists/FluidListFormat.vue";
@@ -116,6 +117,7 @@ export default {
     app.component("ParticleInteractionsEmitterType", ParticleInteractionsEmitterType);
     app.component("VanillaEmitterType", VanillaEmitterType);
     app.component("SpecialParticleEmitterType", SpecialParticleEmitterType);
+    app.component("RandomEmitterType", RandomEmitterType);
 
     app.component("BlockListFormat", BlockListFormat);
     app.component("FluidListFormat", FluidListFormat);
