@@ -28,6 +28,9 @@ import VanillaEmitterType from "../components/formats/emitter/types/VanillaEmitt
 import SpecialParticleEmitterType from "../components/formats/emitter/types/SpecialParticleEmitterType.vue";
 import RandomEmitterType from "../components/formats/emitter/types/RandomEmitterType.vue";
 
+import LifetimeEventFormat from "../components/formats/events/LifetimeEventFormat.vue";
+import AppearanceEventFormat from "../components/formats/events/AppearanceEventFormat.vue";
+
 import BlockListFormat from "../components/formats/lists/BlockListFormat.vue";
 import FluidListFormat from "../components/formats/lists/FluidListFormat.vue";
 import BiomeListFormat from "../components/formats/lists/BiomeListFormat.vue";
@@ -118,6 +121,9 @@ export default {
     app.component("VanillaEmitterType", VanillaEmitterType);
     app.component("SpecialParticleEmitterType", SpecialParticleEmitterType);
     app.component("RandomEmitterType", RandomEmitterType);
+
+    app.component("LifetimeEventFormat", LifetimeEventFormat);
+    app.component("AppearanceEventFormat", AppearanceEventFormat);
 
     app.component("BlockListFormat", BlockListFormat);
     app.component("FluidListFormat", FluidListFormat);

@@ -13,7 +13,7 @@ const props = defineProps(commonProps("[html]<i>Special Particle Emitter Type</i
         icon="particle-interactions-id"
         name="type"
         desc="[html]A special particle type id. Must be a valid registerred particle type, see <a href='/rp/particle-emitter-types#special-particle-types'>Special Particle Types</a> for more info."></TreeField>
-      <TreeField icon="any" name="<type specific fields>" desc="Any additional fields for the special paticle type specified"></TreeField>
+      <TreeField icon="any" name="<type specific fields>" desc="Any additional fields for the special particle type specified"></TreeField>
     </TreeGroup>
   </TreeGroup>
 </template>

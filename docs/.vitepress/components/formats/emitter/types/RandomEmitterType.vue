@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { commonProps } from "../../../../util/CommonFormatComponentProps.ts";
-import ComponentMapField from "../../particle-components/ComponentMapField.vue";
 
 const props = defineProps(commonProps("[html]<i>Random Emitter Type</i>"));
 </script>
