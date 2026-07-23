@@ -28,6 +28,9 @@ import VanillaEmitterType from "../components/formats/emitter/types/VanillaEmitt
 import SpecialParticleEmitterType from "../components/formats/emitter/types/SpecialParticleEmitterType.vue";
 import RandomEmitterType from "../components/formats/emitter/types/RandomEmitterType.vue";
 
+import LifetimeEventFormat from "../components/formats/events/LifetimeEventFormat.vue";
+import AppearanceEventFormat from "../components/formats/events/AppearanceEventFormat.vue";
+
 import BlockListFormat from "../components/formats/lists/BlockListFormat.vue";
 import FluidListFormat from "../components/formats/lists/FluidListFormat.vue";
 import BiomeListFormat from "../components/formats/lists/BiomeListFormat.vue";
@@ -82,6 +85,7 @@ import RGBColourFormat from "../components/formats/utility/RGBColourFormat.vue";
 import FluidTextureTypeFormat from "../components/formats/utility/FluidTextureTypeFormat.vue";
 import Vector3Format from "../components/formats/utility/Vector3Format.vue";
 import Vector3iFormat from "../components/formats/utility/Vector3iFormat.vue";
+import FloatRangeFormat from "../components/formats/utility/FloatRangeFormat.vue";
 
 import "./style.css";
 
@@ -118,6 +122,9 @@ export default {
     app.component("VanillaEmitterType", VanillaEmitterType);
     app.component("SpecialParticleEmitterType", SpecialParticleEmitterType);
     app.component("RandomEmitterType", RandomEmitterType);
+
+    app.component("LifetimeEventFormat", LifetimeEventFormat);
+    app.component("AppearanceEventFormat", AppearanceEventFormat);
 
     app.component("BlockListFormat", BlockListFormat);
     app.component("FluidListFormat", FluidListFormat);
@@ -173,5 +180,6 @@ export default {
     app.component("FluidTextureTypeFormat", FluidTextureTypeFormat);
     app.component("Vector3Format", Vector3Format);
     app.component("Vector3iFormat", Vector3iFormat);
+    app.component("FloatRangeFormat", FloatRangeFormat);
   },
 } satisfies Theme;
