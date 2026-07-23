@@ -85,6 +85,7 @@ import RGBColourFormat from "../components/formats/utility/RGBColourFormat.vue";
 import FluidTextureTypeFormat from "../components/formats/utility/FluidTextureTypeFormat.vue";
 import Vector3Format from "../components/formats/utility/Vector3Format.vue";
 import Vector3iFormat from "../components/formats/utility/Vector3iFormat.vue";
+import FloatRangeFormat from "../components/formats/utility/FloatRangeFormat.vue";
 
 import "./style.css";
 
@@ -179,5 +180,6 @@ export default {
     app.component("FluidTextureTypeFormat", FluidTextureTypeFormat);
     app.component("Vector3Format", Vector3Format);
     app.component("Vector3iFormat", Vector3iFormat);
+    app.component("FloatRangeFormat", FloatRangeFormat);
   },
 } satisfies Theme;
