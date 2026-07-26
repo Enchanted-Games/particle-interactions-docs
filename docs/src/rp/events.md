@@ -162,5 +162,39 @@ Sets the particle uv.
 </TreeGroup>
 
 
-
 ## Lifetime action types
+
+### `modify_gravity` type
+
+Modifies the particle gravity with math operations.
+
+<FloatMathModifierFormat name="" desc="fields"></FloatMathModifierFormat>
+
+### `modify_velocity` type
+
+Modifies the particle velocity with math operations.
+
+<Vector3MathModifierFormat name="" desc="fields"></Vector3MathModifierFormat>
+
+### `modify_lifetime` type
+
+Modifies the particle lifetime with math operations.
+
+<IntMathModifierFormat name="" desc="fields"></IntMathModifierFormat>
+
+### `spawn_particle` type
+
+Spawns a particle relative to the particles' current position.
+
+<TreeGroup name="" desc="fields">
+    <ParticleEmitterFormat name="emitter" desc="An emitter."></ParticleEmitterFormat>
+    <TreeGroup name="velocity_provider" desc="A velocity provider.">
+        <TreeField icon="string" name="type" desc="[html]Optional, defaults to <code>static</code>. The type of velocity emitter. Can be one of the following: <code>static</code> or <code>relative</code>."></TreeField>
+        <Vector3Format name="value" desc="If <code>type</code> is set to <code>static</code>, this value is used directly as the particle velocity. If <code>type</code> is set to <code>relative</code>, this value is multiplied by the velocity of the original particle."></Vector3Format>
+    </TreeGroup>
+    <Vector3Format name="pos_offset" desc="Optional. Offsets the position the particle is emitted from."></Vector3Format>
+</TreeGroup>
+
+### `kill` type
+
+Removes the particle. Has no additional fields.
