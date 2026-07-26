@@ -86,6 +86,10 @@ import FluidTextureTypeFormat from "../components/formats/utility/FluidTextureTy
 import Vector3Format from "../components/formats/utility/Vector3Format.vue";
 import Vector3iFormat from "../components/formats/utility/Vector3iFormat.vue";
 import FloatRangeFormat from "../components/formats/utility/FloatRangeFormat.vue";
+import IntRangeFormat from "../components/formats/utility/IntRangeFormat.vue";
+import FloatMathModifierFormat from "../components/formats/utility/FloatMathModifierFormat.vue";
+import IntMathModifierFormat from "../components/formats/utility/IntMathModifierFormat.vue";
+import Vector3MathModifierFormat from "../components/formats/utility/Vector3MathModifierFormat.vue";
 
 import "./style.css";
 
@@ -181,5 +185,9 @@ export default {
     app.component("Vector3Format", Vector3Format);
     app.component("Vector3iFormat", Vector3iFormat);
     app.component("FloatRangeFormat", FloatRangeFormat);
+    app.component("IntRangeFormat", IntRangeFormat);
+    app.component("FloatMathModifierFormat", FloatMathModifierFormat);
+    app.component("IntMathModifierFormat", IntMathModifierFormat);
+    app.component("Vector3MathModifierFormat", Vector3MathModifierFormat);
   },
 } satisfies Theme;
