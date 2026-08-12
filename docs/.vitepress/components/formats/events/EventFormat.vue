@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { commonProps } from "../../../util/CommonFormatComponentProps.ts";
 
-const props = defineProps(commonProps("[html]<i>Lifetime Event Format</i>"));
+const props = defineProps(commonProps("[html]<i>Event Format</i>"));
 </script>
 
 <template>
@@ -10,8 +10,8 @@ const props = defineProps(commonProps("[html]<i>Lifetime Event Format</i>"));
       <TreeField icon="particle-interactions-id" name="type" desc="[html]An event trigger type, see <a href='/rp/events#event-trigger-types'>Event Trigger Types</a> for more info."> </TreeField>
       <TreeField icon="any" name="<type specific fields>" desc="Any additional fields for the event trigger type specified"></TreeField>
     </TreeGroup>
-    <TreeGroup name="action" desc="Lifetime action">
-      <TreeField icon="particle-interactions-id" name="type" desc="[html]A lifetime event action type, see <a href='/rp/events#lifetime-action-types'>Lifetime Action Types</a> for more info."> </TreeField>
+    <TreeGroup name="action" desc="Action">
+      <TreeField icon="particle-interactions-id" name="type" desc="[html]An event action type, see <a href='/rp/events#action-types'>Action Types</a> for more info."> </TreeField>
       <TreeField icon="any" name="<type specific fields>" desc="Any additional fields for the action type specified"></TreeField>
     </TreeGroup>
   </TreeGroup>

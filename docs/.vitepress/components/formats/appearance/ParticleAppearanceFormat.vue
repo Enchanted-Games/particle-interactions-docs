@@ -17,7 +17,7 @@ const props = defineProps(commonProps("[html]<i>Particle Appearance</i>"));
       desc="The offset of the particle model in 'model space'. See <a href='/rp/particle-appearances#model-offset'>Model offset</a> for more into. Only works with the <code>simple</code> particle behaviour type."></Vector3Format>
     <UVProviderFormat name="uv" desc="[html]A UV provider for the particle. Only works with the <code>simple</code> and <code>spark_shape</code> particle behaviour type."></UVProviderFormat>
     <TreeGroup icon="list" name="events" desc="[html]A list of appearance events">
-      <AppearanceEventFormat name="" desc="An appearance event"></AppearanceEventFormat>
+      <EventFormat name="" desc="An appearance event"></EventFormat>
     </TreeGroup>
   </TreeGroup>
 </template>
