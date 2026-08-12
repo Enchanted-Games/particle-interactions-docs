@@ -108,10 +108,26 @@ A [particle appearance](/rp/particle-appearances) to use for the particle.
 
 ### `lifetime_events`
 
+::: warning
+This component was removed in Particle Interactions v0.10.2 and replaced with `events`
+:::
+
 A list of [lifetime events](/rp/events).
 
 <TreeGroup icon="list" name="" desc="root">
-    <LifetimeEventFormat name="" desc="A lifetime event"></LifetimeEventFormat>
+    <EventFormat name="" desc="A lifetime event"></EventFormat>
+</TreeGroup>
+
+### `events`
+
+::: warning
+This component was added in Particle Interactions v0.10.2
+:::
+
+A list of [events](/rp/events).
+
+<TreeGroup icon="list" name="" desc="root">
+    <EventFormat name="" desc="An event"></EventFormat>
 </TreeGroup>
 
 ## Behaviour types

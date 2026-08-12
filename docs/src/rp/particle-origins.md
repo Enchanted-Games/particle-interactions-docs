@@ -13,6 +13,7 @@
 | `block/falling_block_landed` | A falling block has landed |
 | `block/falling_block_falling` | A falling block is falling |
 | `block/falling_block_unstable` | A falling block is above air or a non-full block |
+| `block/ambient_leaves` | Introduced in `v0.10.2`. Particles that spawn underneath leaf blocks. This only works for blocks that already spawn leaf particles, you cannot use this to add ambient leaf particles to stone for example |
 | `block/redstone_interacted_with` | A repeater, comparator, or redstone dust has been interacted with |
 | `block/walked_through` | A player has walked throuh a block |
 | `block/sprinted_on` | An entity is sprinting on a block |

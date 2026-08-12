@@ -26,6 +26,7 @@ export const sidebars: SidebarType = {
         { text: "Particle appearances", link: "particle-appearances" },
         { text: "Events", link: "events" },
         { text: "Particle palettes", link: "palette-overrides" },
+        { text: "Pack.mcmeta additions", link: "pack-mcmeta-additions" },
       ],
     },
   ],

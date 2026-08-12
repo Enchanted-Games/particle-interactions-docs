@@ -2,9 +2,7 @@
 
 Events can react to certain things a particle does and change something about the particle, such as its size or appearance. Events can be defined in two different places:
 - In a [particle appearance](/rp/particle-appearances)
-- In the [`lifetime_events` component](/rp/particle-definitions#particle-components)
-
-Events in both of these places can use all trigger types. However, lifetime action types are only valid in a particle definition; likewise for appearance action types and particle appearances.
+- In the [`events` component](/rp/particle-definitions#particle-components)
 
 ## Event trigger types
 
@@ -81,7 +79,12 @@ Has a random chance to trigger every tick, optionally within a certain lifetime 
     <FloatRangeFormat name="lifetime_percentage_range" desc="Optional. If specified, the particle lifetime percentage must be within this range for the trigger to have a chance of firing."></FloatRangeFormat>
 </TreeGroup>
 
-## Appearance action types
+## Action types
+
+::: warning
+In Particle Interactions v0.10.1 and lower, only some action types can be used in certain places.
+`modify_gravity`, `modify_velocity`, `modify_lifetime`, `spawn_particle`, and `kill` can only be used in the `lifetime_events` component. Other action types can only be used in the `events` field of a particle appearance.
+:::
 
 ### `set_appearance` type
 
@@ -156,9 +159,6 @@ Sets the particle uv.
 <TreeGroup name="" desc="fields">
     <UVProviderFormat name="uv" desc="A uv provider"></UVProviderFormat>
 </TreeGroup>
-
-
-## Lifetime action types
 
 ### `modify_gravity` type
 
