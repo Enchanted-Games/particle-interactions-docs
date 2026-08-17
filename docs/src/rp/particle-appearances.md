@@ -104,3 +104,21 @@ Picks a random section of the current sprite to display based on the particle sc
 Whenever the sprite changes, a different section of the new sprite is chosen to be displayed.
 
 <RandomUVProviderFormat name="" desc="fields"></RandomUVProviderFormat>
+
+## Facing camera mode variables
+
+### `camera_pitch`
+
+Returns the camera pitch rotation
+
+### `camera_yaw`
+
+Returns the camera yaw rotation
+
+### `point_towards_camera_pitch`
+
+Calculates the pitch angle from the particle position to the camera position. In practice makes the particle always look towards the camera position similar to Minecraft Bedrock Edition particles
+
+### `point_towards_camera_yaw`
+
+Same as `point_towards_camera_pitch` but for the yaw angle

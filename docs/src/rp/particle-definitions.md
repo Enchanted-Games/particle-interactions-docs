@@ -66,6 +66,16 @@ How bouncy the particle is when hitting a surface.
 
 <FloatProviderFormat name=""></FloatProviderFormat>
 
+### `physics/bounciness_decay`
+
+::: warning
+This component was added in Particle Interactions `v0.10.2`
+:::
+
+How much the bounciness should change over time. This value is multiplied with bounciness every time the particle bounces.
+
+<FloatProviderFormat name=""></FloatProviderFormat>
+
 ### `physics/bypass_collision_check`
 
 If set to true, the particle will freeze when colliding with the ground and lose all physics. If set to false, the particle can continue to move after colliding with the ground.
