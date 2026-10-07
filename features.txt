@@ -8,7 +8,7 @@
 [x] generic_leaf.json
 [x] block_dust.json
 block_shatter.json
-chain_snap.json
+[x] chain_snap.json
 flower_petal.json
 grass_blade.json
 heavy_grass_blade.json

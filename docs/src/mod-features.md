@@ -65,3 +65,11 @@ Custom particles for certain blocks which appear when the block is placed, broke
     subtitle="Applies to most 'sandy' blocks such as sand, red sand, soul sand, gravel, and concrete powder"
     since="0.4.0"
 ></Preview>
+
+### Chain snap
+<Preview
+    src="/images/block-particle-previews/chain-snap"
+    alt="Video showing chain snap spawning from chain blocks"
+    subtitle="Applies to all chain blocks"
+    since="0.8.0"
+></Preview>
