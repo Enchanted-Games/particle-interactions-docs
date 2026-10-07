@@ -1,0 +1,25 @@
+# Block particle overrides
+
+[x] cherry_leaf.json
+[x] flowering_azalea.json
+[x] pale_leaf.json
+[x] pine_leaf.json
+[x] poplar_leaf
+[x] generic_leaf.json
+[x] block_dust.json
+block_shatter.json
+[x] chain_snap.json
+flower_petal.json
+grass_blade.json
+heavy_grass_blade.json
+honey_block.json
+large_stick.json
+lava_fluid_splash.json
+moss_clump.json
+[x] pale_moss_clump.json
+redstone_dust.json
+redstone_interaction.json
+slime_block.json
+snow_dust.json
+vanilla.json
+water_fluid_splash.json
