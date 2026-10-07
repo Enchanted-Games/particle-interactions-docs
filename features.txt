@@ -1,22 +1,22 @@
 # Block particle overrides
 
-azalea_leaf.json
-block_dust.json
+[x] cherry_leaf.json
+[x] flowering_azalea.json
+[x] pale_leaf.json
+[x] pine_leaf.json
+[x] poplar_leaf
+[x] generic_leaf.json
+[x] block_dust.json
 block_shatter.json
 chain_snap.json
-cherry_leaf.json
 flower_petal.json
-flowering_azalea.json
-generic_leaf.json
 grass_blade.json
 heavy_grass_blade.json
 honey_block.json
 large_stick.json
 lava_fluid_splash.json
 moss_clump.json
-pale_leaf.json
-pale_moss_clump.json
-pine_leaf.json
+[x] pale_moss_clump.json
 redstone_dust.json
 redstone_interaction.json
 slime_block.json
