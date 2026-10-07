@@ -20,6 +20,8 @@ export default defineVersionedConfig({
     },
   },
 
+  head: [["link", { rel: "icon", href: "/images/icon.png" }]],
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: {
