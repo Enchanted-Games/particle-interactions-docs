@@ -6,9 +6,11 @@ const props = defineProps(commonProps("[html]<i>Particle Emitter Rule</i>"));
 
 <template>
   <TreeGroup :colour="props.colour" :name="props.name" :desc="props.desc">
-    <TreeGroup name="rules" icon="list" desc="Optional. A list of emitter rules. An emitter rule is made up of a condition and emitter to use if the condition passes">
+    <TreeGroup name="rules" icon="list" desc="Optional. A list of emitter rules. An emitter rule is made up of a condition and emitter to use if at least one condition passes">
       <TreeGroup desc="a rule." icon="object">
-        <EmitterConditionFormat name="condition"></EmitterConditionFormat>
+        <TreeGroup name="conditions" icon="list" desc="A list of conditions.">
+          <EmitterConditionFormat name="" desc="A condition."></EmitterConditionFormat>
+        </TreeGroup>
         <ParticleEmitterFormat name="emitter" icon="object" desc="Emitter to use if this rule passes" />
       </TreeGroup>
     </TreeGroup>
